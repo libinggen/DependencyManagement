@@ -19,13 +19,7 @@
 {
     if (!_rootViewController) {
         _rootViewController = [[ViewController alloc] init];
-        
-        _rootViewController.routeHandel = self;
         _rootViewController.postHelper = self.postHelper;
-        _rootViewController.hotAPIHandel = [self.postHelper hotAPI];
-        _rootViewController.latestAPIHandel = [self.postHelper latestAPI];
-        _rootViewController.hotStoreHelper = [self.postHelper hotStore];
-        _rootViewController.latestStoreHelper = [self.postHelper latestStore];
     }
     
     return _rootViewController;

@@ -19,7 +19,7 @@
     [super viewDidLoad];
     
     [self initUI];
-    [self.hotAPIHandel loadData];
+    [[self.postHelper hotAPI] loadData];
 }
 
 -(void)initUI
@@ -38,6 +38,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return self.list.count;
+//    [self.postHelper routeHandle];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -60,12 +61,12 @@
 
 -(NSDictionary *)paramSourceAPIHandle:(id<APIInterface>)apiHandle
 {
-    if ([apiHandle isKindOfClass:[self.hotAPIHandel class]]) {
+    if ([apiHandle isKindOfClass:[[self.postHelper hotAPI] class]]) {
         return @{
                  @"URLString" : @"https://www.v2ex.com/api/topics/hot.json"
                  };
     }
-    else if ([apiHandle isKindOfClass:[self.latestAPIHandel class]]) {
+    else if ([apiHandle isKindOfClass:[[self.postHelper latestAPI] class]]) {
         return @{
                  @"URLString" : @"https://www.v2ex.com/api/topics/latest.json"
                  };
@@ -76,12 +77,12 @@
 
 - (void)listWtihData:(NSArray *)data apiHandle:(id<APIInterface>)apiHandle
 {
-    if ([apiHandle isKindOfClass:[self.hotAPIHandel class]]) {
+    if ([apiHandle isKindOfClass:[[self.postHelper hotAPI] class]]) {
         self.list = data;
-        [self.latestAPIHandel loadData];
+        [[self.postHelper latestAPI] loadData];
 //        [self.hotStoreHelper archiveWithObject:data];
     }
-    else if ([apiHandle isKindOfClass:[self.latestAPIHandel class]]) {
+    else if ([apiHandle isKindOfClass:[[self.postHelper latestAPI] class]]) {
         self.list = data;
     }
         

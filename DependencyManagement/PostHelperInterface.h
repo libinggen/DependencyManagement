@@ -8,6 +8,7 @@
 #import "PostInterface.h"
 #import "APIInterface.h"
 #import "StoreInterface.h"
+#import "RouteInterface.h"
 
 #ifndef DependencyManagement_PostHelperInterface_h
 #define DependencyManagement_PostHelperInterface_h

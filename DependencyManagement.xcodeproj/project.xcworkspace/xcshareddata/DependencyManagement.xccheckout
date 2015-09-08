@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>C0E7F1D7-3022-4E58-BA66-B7B7566B8A2F</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>DependencyManagement</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>4772C5857729BB9DA0358D9A1D7706340BB27514</key>
 		<string>https://github.com/libinggen/DependencyManagement.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>DependencyManagement.xcodeproj/project.xcworkspace</string>
+	<string>DependencyManagement.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>4772C5857729BB9DA0358D9A1D7706340BB27514</key>
