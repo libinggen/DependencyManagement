@@ -1,15 +1,16 @@
 //
 //  AppDelegate.m
-//  DependencyManagement
+//  CallBack
 //
-//  Created by LiBinggen on 15/9/7.
+//  Created by LiBinggen on 15/9/6.
 //  Copyright (c) 2015年 qingqing. All rights reserved.
 //
 
 #import "AppDelegate.h"
+#import "RootRouteHandle.h"
 
 @interface AppDelegate ()
-
+@property (nonatomic, strong) RootRouteHandle *rootRouteHandle;
 @end
 
 @implementation AppDelegate
@@ -17,7 +18,24 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+    UINavigationController *navigationController = [[UINavigationController alloc]initWithRootViewController:self.rootRouteHandle.rootViewController];
+    self.window.rootViewController = navigationController;
+    
+    [self.window makeKeyAndVisible];
     return YES;
+}
+
+-(RootRouteHandle *)rootRouteHandle
+{
+    if (!_rootRouteHandle) {
+        _rootRouteHandle = [[RootRouteHandle alloc]init];
+    }
+    
+    return _rootRouteHandle;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

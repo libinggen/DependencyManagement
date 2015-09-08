@@ -14,6 +14,14 @@
 		7A31D4FB1B9DE42C00ABD450 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A31D4FA1B9DE42C00ABD450 /* Images.xcassets */; };
 		7A31D4FE1B9DE42C00ABD450 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A31D4FC1B9DE42C00ABD450 /* LaunchScreen.xib */; };
 		7A31D50A1B9DE42C00ABD450 /* DependencyManagementTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A31D5091B9DE42C00ABD450 /* DependencyManagementTests.m */; };
+		7A31D51C1B9DE75D00ABD450 /* APIHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A31D5151B9DE75D00ABD450 /* APIHandle.m */; };
+		7A31D51D1B9DE75D00ABD450 /* HotAPIHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A31D5191B9DE75D00ABD450 /* HotAPIHandle.m */; };
+		7A31D51E1B9DE75D00ABD450 /* LatestAPIHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A31D51B1B9DE75D00ABD450 /* LatestAPIHandle.m */; };
+		7A31D5261B9DE90B00ABD450 /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A31D5251B9DE90B00ABD450 /* Post.m */; };
+		7A31D52F1B9DEB7D00ABD450 /* Member.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A31D52E1B9DEB7D00ABD450 /* Member.m */; };
+		7A31D5331B9DEBB300ABD450 /* Node.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A31D5321B9DEBB300ABD450 /* Node.m */; };
+		7A355D191B9E554D00045A8E /* RootRouteHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A355D181B9E554D00045A8E /* RootRouteHandle.m */; };
+		7A355D1E1B9E594300045A8E /* PostHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A355D1D1B9E594300045A8E /* PostHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +48,28 @@
 		7A31D5031B9DE42C00ABD450 /* DependencyManagementTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DependencyManagementTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A31D5081B9DE42C00ABD450 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A31D5091B9DE42C00ABD450 /* DependencyManagementTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DependencyManagementTests.m; sourceTree = "<group>"; };
+		7A31D5131B9DE75D00ABD450 /* APICallbackInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APICallbackInterface.h; sourceTree = "<group>"; };
+		7A31D5141B9DE75D00ABD450 /* APIHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIHandle.h; sourceTree = "<group>"; };
+		7A31D5151B9DE75D00ABD450 /* APIHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIHandle.m; sourceTree = "<group>"; };
+		7A31D5161B9DE75D00ABD450 /* APIInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIInterface.h; sourceTree = "<group>"; };
+		7A31D5171B9DE75D00ABD450 /* APIParamSourceInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIParamSourceInterface.h; sourceTree = "<group>"; };
+		7A31D5181B9DE75D00ABD450 /* HotAPIHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotAPIHandle.h; sourceTree = "<group>"; };
+		7A31D5191B9DE75D00ABD450 /* HotAPIHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotAPIHandle.m; sourceTree = "<group>"; };
+		7A31D51A1B9DE75D00ABD450 /* LatestAPIHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LatestAPIHandle.h; sourceTree = "<group>"; };
+		7A31D51B1B9DE75D00ABD450 /* LatestAPIHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LatestAPIHandle.m; sourceTree = "<group>"; };
+		7A31D5241B9DE90B00ABD450 /* Post.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Post.h; sourceTree = "<group>"; };
+		7A31D5251B9DE90B00ABD450 /* Post.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
+		7A31D52D1B9DEB7D00ABD450 /* Member.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Member.h; sourceTree = "<group>"; };
+		7A31D52E1B9DEB7D00ABD450 /* Member.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Member.m; sourceTree = "<group>"; };
+		7A31D5311B9DEBB300ABD450 /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
+		7A31D5321B9DEBB300ABD450 /* Node.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Node.m; sourceTree = "<group>"; };
+		7A355D141B9E548000045A8E /* RouteInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouteInterface.h; sourceTree = "<group>"; };
+		7A355D171B9E554D00045A8E /* RootRouteHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootRouteHandle.h; sourceTree = "<group>"; };
+		7A355D181B9E554D00045A8E /* RootRouteHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootRouteHandle.m; sourceTree = "<group>"; };
+		7A355D1A1B9E58ED00045A8E /* PostHelperInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostHelperInterface.h; sourceTree = "<group>"; };
+		7A355D1C1B9E594300045A8E /* PostHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostHelper.h; sourceTree = "<group>"; };
+		7A355D1D1B9E594300045A8E /* PostHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostHelper.m; sourceTree = "<group>"; };
+		7A355D1F1B9E607600045A8E /* PostInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostInterface.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +111,11 @@
 		7A31D4EC1B9DE42C00ABD450 /* DependencyManagement */ = {
 			isa = PBXGroup;
 			children = (
+				7A31D51F1B9DE76300ABD450 /* Interface */,
+				7A31D5201B9DE78800ABD450 /* APIHandle */,
+				7A355D151B9E551800045A8E /* RouteHandle */,
+				7A355D1B1B9E591800045A8E /* PostHelper */,
+				7A31D5231B9DE8E400ABD450 /* Model */,
 				7A31D4F11B9DE42C00ABD450 /* AppDelegate.h */,
 				7A31D4F21B9DE42C00ABD450 /* AppDelegate.m */,
 				7A31D4F41B9DE42C00ABD450 /* ViewController.h */,
@@ -117,6 +152,111 @@
 				7A31D5081B9DE42C00ABD450 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7A31D51F1B9DE76300ABD450 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				7A31D5161B9DE75D00ABD450 /* APIInterface.h */,
+				7A31D5131B9DE75D00ABD450 /* APICallbackInterface.h */,
+				7A31D5171B9DE75D00ABD450 /* APIParamSourceInterface.h */,
+				7A355D141B9E548000045A8E /* RouteInterface.h */,
+				7A355D1A1B9E58ED00045A8E /* PostHelperInterface.h */,
+				7A355D1F1B9E607600045A8E /* PostInterface.h */,
+			);
+			name = Interface;
+			sourceTree = "<group>";
+		};
+		7A31D5201B9DE78800ABD450 /* APIHandle */ = {
+			isa = PBXGroup;
+			children = (
+				7A31D5141B9DE75D00ABD450 /* APIHandle.h */,
+				7A31D5151B9DE75D00ABD450 /* APIHandle.m */,
+				7A31D5211B9DE7A300ABD450 /* HotAPIHandle */,
+				7A31D5221B9DE7B400ABD450 /* LatestAPIHandle */,
+			);
+			name = APIHandle;
+			sourceTree = "<group>";
+		};
+		7A31D5211B9DE7A300ABD450 /* HotAPIHandle */ = {
+			isa = PBXGroup;
+			children = (
+				7A31D5181B9DE75D00ABD450 /* HotAPIHandle.h */,
+				7A31D5191B9DE75D00ABD450 /* HotAPIHandle.m */,
+			);
+			name = HotAPIHandle;
+			sourceTree = "<group>";
+		};
+		7A31D5221B9DE7B400ABD450 /* LatestAPIHandle */ = {
+			isa = PBXGroup;
+			children = (
+				7A31D51A1B9DE75D00ABD450 /* LatestAPIHandle.h */,
+				7A31D51B1B9DE75D00ABD450 /* LatestAPIHandle.m */,
+			);
+			name = LatestAPIHandle;
+			sourceTree = "<group>";
+		};
+		7A31D5231B9DE8E400ABD450 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7A31D5301B9DEB9C00ABD450 /* Node */,
+				7A31D52C1B9DEB5700ABD450 /* Member */,
+				7A31D5271B9DE91200ABD450 /* Post */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		7A31D5271B9DE91200ABD450 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				7A31D5241B9DE90B00ABD450 /* Post.h */,
+				7A31D5251B9DE90B00ABD450 /* Post.m */,
+			);
+			name = Post;
+			sourceTree = "<group>";
+		};
+		7A31D52C1B9DEB5700ABD450 /* Member */ = {
+			isa = PBXGroup;
+			children = (
+				7A31D52D1B9DEB7D00ABD450 /* Member.h */,
+				7A31D52E1B9DEB7D00ABD450 /* Member.m */,
+			);
+			name = Member;
+			sourceTree = "<group>";
+		};
+		7A31D5301B9DEB9C00ABD450 /* Node */ = {
+			isa = PBXGroup;
+			children = (
+				7A31D5311B9DEBB300ABD450 /* Node.h */,
+				7A31D5321B9DEBB300ABD450 /* Node.m */,
+			);
+			name = Node;
+			sourceTree = "<group>";
+		};
+		7A355D151B9E551800045A8E /* RouteHandle */ = {
+			isa = PBXGroup;
+			children = (
+				7A355D161B9E553200045A8E /* RootRouteHandle */,
+			);
+			name = RouteHandle;
+			sourceTree = "<group>";
+		};
+		7A355D161B9E553200045A8E /* RootRouteHandle */ = {
+			isa = PBXGroup;
+			children = (
+				7A355D171B9E554D00045A8E /* RootRouteHandle.h */,
+				7A355D181B9E554D00045A8E /* RootRouteHandle.m */,
+			);
+			name = RootRouteHandle;
+			sourceTree = "<group>";
+		};
+		7A355D1B1B9E591800045A8E /* PostHelper */ = {
+			isa = PBXGroup;
+			children = (
+				7A355D1C1B9E594300045A8E /* PostHelper.h */,
+				7A355D1D1B9E594300045A8E /* PostHelper.m */,
+			);
+			name = PostHelper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,9 +359,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A31D51C1B9DE75D00ABD450 /* APIHandle.m in Sources */,
+				7A31D51E1B9DE75D00ABD450 /* LatestAPIHandle.m in Sources */,
+				7A355D1E1B9E594300045A8E /* PostHelper.m in Sources */,
 				7A31D4F61B9DE42C00ABD450 /* ViewController.m in Sources */,
+				7A31D52F1B9DEB7D00ABD450 /* Member.m in Sources */,
+				7A31D5261B9DE90B00ABD450 /* Post.m in Sources */,
+				7A31D5331B9DEBB300ABD450 /* Node.m in Sources */,
 				7A31D4F31B9DE42C00ABD450 /* AppDelegate.m in Sources */,
+				7A355D191B9E554D00045A8E /* RootRouteHandle.m in Sources */,
 				7A31D4F01B9DE42C00ABD450 /* main.m in Sources */,
+				7A31D51D1B9DE75D00ABD450 /* HotAPIHandle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +564,7 @@
 				7A31D50F1B9DE42C00ABD450 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7A31D5101B9DE42C00ABD450 /* Build configuration list for PBXNativeTarget "DependencyManagementTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +573,7 @@
 				7A31D5121B9DE42C00ABD450 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
