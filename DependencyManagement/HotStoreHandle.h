@@ -1,5 +1,5 @@
 //
-//  PostHelper.h
+//  HotStoreHandle.h
 //  DependencyManagement
 //
 //  Created by LiBinggen on 15/9/8.
@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "PostHelperInterface.h"
+#import "StoreInterface.h"
 
-@interface PostHelper : NSObject<PostHelperInterface>
+@interface HotStoreHandle : NSObject<StoreInterface>
 
 @end

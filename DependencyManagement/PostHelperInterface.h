@@ -12,5 +12,6 @@
 @protocol PostHelperInterface <NSObject>
 -(NSString *)titleForPost:(id<PostInterface>)post;
 -(NSString *)imageURLStringForPost:(id<PostInterface>)post;
+-(NSArray *)postArrayWithKeyValuesArray:(NSArray *)array;
 @end
 #endif

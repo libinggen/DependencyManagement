@@ -30,6 +30,9 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     [self.view addSubview:self.tableView];
+    
+//    self.list = [self.hotStoreHelper unarchive];
+//    [self tableViewReloadData];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -76,6 +79,7 @@
     if ([apiHandle isKindOfClass:[self.hotAPIHandel class]]) {
         self.list = data;
         [self.latestAPIHandel loadData];
+//        [self.hotStoreHelper archiveWithObject:data];
     }
     else if ([apiHandle isKindOfClass:[self.latestAPIHandel class]]) {
         self.list = data;

@@ -19,4 +19,9 @@
 {
     return [post member].avatar_mini;
 }
+
+-(NSArray *)postArrayWithKeyValuesArray:(NSArray *)array
+{
+    return [Post objectArrayWithKeyValuesArray:array];
+}
 @end

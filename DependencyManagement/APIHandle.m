@@ -7,7 +7,6 @@
 //
 
 #import "APIHandle.h"
-#import "Post.h"
 
 @implementation APIHandle
 
@@ -39,6 +38,6 @@
 
 -(NSArray *)handleList:(NSArray *)list
 {
-    return [Post objectArrayWithKeyValuesArray:list];
+    return [self.postHelper postArrayWithKeyValuesArray:list];
 }
 @end
