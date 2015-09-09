@@ -12,9 +12,11 @@
 #define CallBack_APIInterface_h
 @protocol APIInterface <NSObject>
 
+@optional
 - (void)setCallbackHandel:(id<APICallbackInterface>)callbackHandel;
 - (void)setParamSourceHandel:(id<APIParamSourceInterface>)paramSourceHandel;
 
 - (void)loadData;
+- (void)nextPage;
 @end
 #endif
