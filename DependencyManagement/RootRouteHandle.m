@@ -14,7 +14,6 @@
 @interface RootRouteHandle()
 @property (nonatomic, strong) HotHelper *hotHelper;
 @property (nonatomic, strong) LatestHelper *latestHelper;
-@property (nonatomic, strong) LatestStoreHandle *latestStoreHandle;
 @end
 
 @implementation RootRouteHandle
@@ -25,7 +24,6 @@
         _rootViewController = [[ViewController alloc] init];
         _rootViewController.hotHelper = self.hotHelper;
         _rootViewController.latestHelper = self.latestHelper;
-        _rootViewController.latestStoreHandle = self.latestStoreHandle;
     }
     
     return _rootViewController;
@@ -51,15 +49,6 @@
         [[_latestHelper apiHandle]setParamSourceHandel:self.rootViewController];
     }
     return _latestHelper;
-}
-
-- (LatestStoreHandle *)latestStoreHandle
-{
-    if(!_latestStoreHandle)
-    {
-        _latestStoreHandle = [[LatestStoreHandle alloc] init];
-    }
-    return _latestStoreHandle;
 }
 
 @end

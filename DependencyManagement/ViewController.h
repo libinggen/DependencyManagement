@@ -16,6 +16,5 @@
 @interface ViewController : UIViewController<APIParamSourceInterface,APICallbackInterface>
 @property (nonatomic, weak) id<HelperInterface,PostHelperInterface> hotHelper;
 @property (nonatomic, weak) id<HelperInterface,PostHelperInterface> latestHelper;
-@property (nonatomic, weak) id<StoreInterface> latestStoreHandle;
 @end
 

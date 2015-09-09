@@ -20,8 +20,8 @@
     
     [self initUI];
     [[self.hotHelper apiHandle] loadData];
-    self.list = [self.latestStoreHandle unarchive];
-//    self.list = [[self.latestHelper storeHandle] unarchive];
+//    self.list = [[self.hotHelper storeHandle] unarchive];
+    self.list = [[self.latestHelper storeHandle] unarchive];
     [self tableViewReloadData];
 }
 
@@ -80,11 +80,11 @@
     if ([apiHandle isKindOfClass:[[self.hotHelper apiHandle] class]]) {
 //        self.list = data;
         [[self.latestHelper apiHandle] loadData];
-//        [self.hotStoreHelper archiveWithObject:data];
+        [[self.hotHelper storeHandle] archiveWithObject:data];
     }
     else if ([apiHandle isKindOfClass:[[self.latestHelper apiHandle] class]]) {
         self.list = data;
-        [self.latestStoreHandle archiveWithObject:data];
+        [[self.latestHelper storeHandle] archiveWithObject:data];
     }
         
     [self tableViewReloadData];
