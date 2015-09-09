@@ -93,6 +93,8 @@
 		7A355D221B9F307B00045A8E /* LatestStoreHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LatestStoreHandle.h; sourceTree = "<group>"; };
 		7A355D231B9F307B00045A8E /* LatestStoreHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LatestStoreHandle.m; sourceTree = "<group>"; };
 		7A355D2C1B9F31CF00045A8E /* StoreInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreInterface.h; sourceTree = "<group>"; };
+		7AEBC44A1BA0F189001DB5C9 /* RouteCallbackInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouteCallbackInterface.h; sourceTree = "<group>"; };
+		7AEBC44B1BA0F189001DB5C9 /* RouteParamSourceInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouteParamSourceInterface.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -365,6 +367,8 @@
 		7A355D2B1B9F318F00045A8E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				7AEBC44A1BA0F189001DB5C9 /* RouteCallbackInterface.h */,
+				7AEBC44B1BA0F189001DB5C9 /* RouteParamSourceInterface.h */,
 				7A355D141B9E548000045A8E /* RouteInterface.h */,
 			);
 			name = Controller;
