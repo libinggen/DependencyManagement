@@ -23,6 +23,7 @@
 {
     if (self = [super init]) {
         //        [self decode:decoder];
+//        self.avatar_mini = [decoder decodeObjectForKey:@"avatar_mini"];
     }
     return self;
 }
@@ -30,6 +31,7 @@
 - (void)encodeWithCoder:(NSCoder *)encoder
 {
     //    [self encode:encoder];
+//    [encoder encodeObject:self.avatar_mini forKey:@"avatar_mini"];
 }
 
 + (instancetype)objectWithDict:(NSDictionary *)dict

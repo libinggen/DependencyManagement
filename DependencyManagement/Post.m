@@ -25,6 +25,8 @@
 {
     if (self = [super init]) {
 //        [self decode:decoder];
+        self.title = [decoder decodeObjectForKey:@"title"];
+        self.member = [decoder decodeObjectForKey:@"member"];
     }
     return self;
 }
@@ -32,6 +34,8 @@
 - (void)encodeWithCoder:(NSCoder *)encoder
 {
 //    [self encode:encoder];
+    [encoder encodeObject:self.title forKey:@"title"];
+    [encoder encodeObject:self.member forKey:@"member"];
 }
 
 + (instancetype)objectWithDict:(NSDictionary *)dict
