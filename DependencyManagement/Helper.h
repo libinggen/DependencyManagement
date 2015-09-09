@@ -1,14 +1,13 @@
 //
-//  HotStoreHandle.h
+//  Helper.h
 //  DependencyManagement
 //
-//  Created by LiBinggen on 15/9/8.
+//  Created by WYWK on 15/9/9.
 //  Copyright (c) 2015年 qingqing. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-#import "StoreHandle.h"
-
-@interface HotStoreHandle : StoreHandle
+#import "HelperInterface.h"
+@interface Helper : NSObject<HelperInterface>
 
 @end

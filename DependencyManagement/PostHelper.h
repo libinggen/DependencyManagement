@@ -7,10 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Helper.h"
 #import "PostHelperInterface.h"
-#import "APIParamSourceInterface.h"
-#import "APICallbackInterface.h"
 
-@interface PostHelper : NSObject<PostHelperInterface>
-@property (nonatomic, weak) id<APIParamSourceInterface,APICallbackInterface> apiRequester;
+@interface PostHelper : Helper<PostHelperInterface>
+
 @end

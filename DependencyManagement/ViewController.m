@@ -19,7 +19,7 @@
     [super viewDidLoad];
     
     [self initUI];
-    [[self.postHelper hotAPI] loadData];
+    [[self.hotHelper apiHandle] loadData];
 }
 
 -(void)initUI
@@ -54,19 +54,19 @@
 
 - (UITableViewCell *)configureWithCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    cell.textLabel.text = [self.postHelper titleForPost:self.list[indexPath.row]];
-    cell.imageView.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:[NSString stringWithFormat:@"http:%@",[self.postHelper imageURLStringForPost:self.list[indexPath.row]]]]]];
+    cell.textLabel.text = [self.hotHelper titleForPost:self.list[indexPath.row]];
+    cell.imageView.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:[NSString stringWithFormat:@"http:%@",[self.hotHelper imageURLStringForPost:self.list[indexPath.row]]]]]];
     return cell;
 }
 
 -(NSDictionary *)paramSourceAPIHandle:(id<APIInterface>)apiHandle
 {
-    if ([apiHandle isKindOfClass:[[self.postHelper hotAPI] class]]) {
+    if ([apiHandle isKindOfClass:[[self.hotHelper apiHandle] class]]) {
         return @{
                  @"URLString" : @"https://www.v2ex.com/api/topics/hot.json"
                  };
     }
-    else if ([apiHandle isKindOfClass:[[self.postHelper latestAPI] class]]) {
+    else if ([apiHandle isKindOfClass:[[self.latestHelper apiHandle] class]]) {
         return @{
                  @"URLString" : @"https://www.v2ex.com/api/topics/latest.json"
                  };
@@ -77,12 +77,12 @@
 
 - (void)listWtihData:(NSArray *)data apiHandle:(id<APIInterface>)apiHandle
 {
-    if ([apiHandle isKindOfClass:[[self.postHelper hotAPI] class]]) {
-        self.list = data;
-        [[self.postHelper latestAPI] loadData];
+    if ([apiHandle isKindOfClass:[[self.hotHelper apiHandle] class]]) {
+//        self.list = data;
+        [[self.latestHelper apiHandle] loadData];
 //        [self.hotStoreHelper archiveWithObject:data];
     }
-    else if ([apiHandle isKindOfClass:[[self.postHelper latestAPI] class]]) {
+    else if ([apiHandle isKindOfClass:[[self.latestHelper apiHandle] class]]) {
         self.list = data;
     }
         

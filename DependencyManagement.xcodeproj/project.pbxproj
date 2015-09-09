@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02D8D8B81BA011CD00D93468 /* HotHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 02D8D8B71BA011CD00D93468 /* HotHelper.m */; };
+		02D8D8BB1BA011E100D93468 /* LatestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 02D8D8BA1BA011E100D93468 /* LatestHelper.m */; };
+		02D8D8BF1BA0141000D93468 /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 02D8D8BE1BA0141000D93468 /* Helper.m */; };
+		02D8D8C21BA014C400D93468 /* StoreHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 02D8D8C11BA014C400D93468 /* StoreHandle.m */; };
+		02D8D8C51BA01C0900D93468 /* RouteHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 02D8D8C41BA01C0900D93468 /* RouteHandle.m */; };
 		7A31D4F01B9DE42C00ABD450 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A31D4EF1B9DE42C00ABD450 /* main.m */; };
 		7A31D4F31B9DE42C00ABD450 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A31D4F21B9DE42C00ABD450 /* AppDelegate.m */; };
 		7A31D4F61B9DE42C00ABD450 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A31D4F51B9DE42C00ABD450 /* ViewController.m */; };
@@ -37,6 +42,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02D8D8B61BA011CD00D93468 /* HotHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotHelper.h; sourceTree = "<group>"; };
+		02D8D8B71BA011CD00D93468 /* HotHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotHelper.m; sourceTree = "<group>"; };
+		02D8D8B91BA011E100D93468 /* LatestHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LatestHelper.h; sourceTree = "<group>"; };
+		02D8D8BA1BA011E100D93468 /* LatestHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LatestHelper.m; sourceTree = "<group>"; };
+		02D8D8BC1BA0120C00D93468 /* HelperInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelperInterface.h; sourceTree = "<group>"; };
+		02D8D8BD1BA0141000D93468 /* Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helper.h; sourceTree = "<group>"; };
+		02D8D8BE1BA0141000D93468 /* Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Helper.m; sourceTree = "<group>"; };
+		02D8D8C01BA014C400D93468 /* StoreHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreHandle.h; sourceTree = "<group>"; };
+		02D8D8C11BA014C400D93468 /* StoreHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreHandle.m; sourceTree = "<group>"; };
+		02D8D8C31BA01C0900D93468 /* RouteHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouteHandle.h; sourceTree = "<group>"; };
+		02D8D8C41BA01C0900D93468 /* RouteHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouteHandle.m; sourceTree = "<group>"; };
 		7A31D4EA1B9DE42C00ABD450 /* DependencyManagement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DependencyManagement.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A31D4EE1B9DE42C00ABD450 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A31D4EF1B9DE42C00ABD450 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -97,6 +113,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02D8D8C61BA01C9D00D93468 /* PostHelper */ = {
+			isa = PBXGroup;
+			children = (
+				7A355D1C1B9E594300045A8E /* PostHelper.h */,
+				7A355D1D1B9E594300045A8E /* PostHelper.m */,
+			);
+			name = PostHelper;
+			sourceTree = "<group>";
+		};
+		02D8D8C71BA01CAE00D93468 /* HotHelper */ = {
+			isa = PBXGroup;
+			children = (
+				02D8D8B61BA011CD00D93468 /* HotHelper.h */,
+				02D8D8B71BA011CD00D93468 /* HotHelper.m */,
+			);
+			name = HotHelper;
+			sourceTree = "<group>";
+		};
+		02D8D8C81BA01CBC00D93468 /* LatesHelper */ = {
+			isa = PBXGroup;
+			children = (
+				02D8D8B91BA011E100D93468 /* LatestHelper.h */,
+				02D8D8BA1BA011E100D93468 /* LatestHelper.m */,
+			);
+			name = LatesHelper;
+			sourceTree = "<group>";
+		};
 		7A31D4E11B9DE42C00ABD450 = {
 			isa = PBXGroup;
 			children = (
@@ -120,7 +163,7 @@
 			children = (
 				7A31D51F1B9DE76300ABD450 /* Interface */,
 				7A31D5231B9DE8E400ABD450 /* Model */,
-				7A355D1B1B9E591800045A8E /* PostHelper */,
+				7A355D1B1B9E591800045A8E /* Helper */,
 				7A31D5201B9DE78800ABD450 /* APIHandle */,
 				7A355D261B9F30AA00045A8E /* StoreHandle */,
 				7A355D151B9E551800045A8E /* RouteHandle */,
@@ -241,6 +284,8 @@
 		7A355D151B9E551800045A8E /* RouteHandle */ = {
 			isa = PBXGroup;
 			children = (
+				02D8D8C31BA01C0900D93468 /* RouteHandle.h */,
+				02D8D8C41BA01C0900D93468 /* RouteHandle.m */,
 				7A355D161B9E553200045A8E /* RootRouteHandle */,
 			);
 			name = RouteHandle;
@@ -255,18 +300,23 @@
 			name = RootRouteHandle;
 			sourceTree = "<group>";
 		};
-		7A355D1B1B9E591800045A8E /* PostHelper */ = {
+		7A355D1B1B9E591800045A8E /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				7A355D1C1B9E594300045A8E /* PostHelper.h */,
-				7A355D1D1B9E594300045A8E /* PostHelper.m */,
+				02D8D8BD1BA0141000D93468 /* Helper.h */,
+				02D8D8BE1BA0141000D93468 /* Helper.m */,
+				02D8D8C61BA01C9D00D93468 /* PostHelper */,
+				02D8D8C71BA01CAE00D93468 /* HotHelper */,
+				02D8D8C81BA01CBC00D93468 /* LatesHelper */,
 			);
-			name = PostHelper;
+			name = Helper;
 			sourceTree = "<group>";
 		};
 		7A355D261B9F30AA00045A8E /* StoreHandle */ = {
 			isa = PBXGroup;
 			children = (
+				02D8D8C01BA014C400D93468 /* StoreHandle.h */,
+				02D8D8C11BA014C400D93468 /* StoreHandle.m */,
 				7A355D271B9F30C800045A8E /* HotStoreHandle */,
 				7A355D281B9F30D900045A8E /* LatestStoreHandle */,
 			);
@@ -294,12 +344,13 @@
 		7A355D291B9F317C00045A8E /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				7A355D1F1B9E607600045A8E /* PostInterface.h */,
-				7A355D1A1B9E58ED00045A8E /* PostHelperInterface.h */,
+				02D8D8BC1BA0120C00D93468 /* HelperInterface.h */,
 				7A31D5161B9DE75D00ABD450 /* APIInterface.h */,
 				7A31D5131B9DE75D00ABD450 /* APICallbackInterface.h */,
 				7A31D5171B9DE75D00ABD450 /* APIParamSourceInterface.h */,
 				7A355D2C1B9F31CF00045A8E /* StoreInterface.h */,
+				7A355D1F1B9E607600045A8E /* PostInterface.h */,
+				7A355D1A1B9E58ED00045A8E /* PostHelperInterface.h */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -422,13 +473,18 @@
 				7A31D51C1B9DE75D00ABD450 /* APIHandle.m in Sources */,
 				7A31D51E1B9DE75D00ABD450 /* LatestAPIHandle.m in Sources */,
 				7A355D1E1B9E594300045A8E /* PostHelper.m in Sources */,
+				02D8D8BF1BA0141000D93468 /* Helper.m in Sources */,
 				7A355D251B9F307B00045A8E /* LatestStoreHandle.m in Sources */,
+				02D8D8C51BA01C0900D93468 /* RouteHandle.m in Sources */,
 				7A31D4F61B9DE42C00ABD450 /* ViewController.m in Sources */,
+				02D8D8B81BA011CD00D93468 /* HotHelper.m in Sources */,
 				7A31D52F1B9DEB7D00ABD450 /* Member.m in Sources */,
 				7A31D5261B9DE90B00ABD450 /* Post.m in Sources */,
 				7A31D5331B9DEBB300ABD450 /* Node.m in Sources */,
 				7A355D241B9F307B00045A8E /* HotStoreHandle.m in Sources */,
 				7A31D4F31B9DE42C00ABD450 /* AppDelegate.m in Sources */,
+				02D8D8BB1BA011E100D93468 /* LatestHelper.m in Sources */,
+				02D8D8C21BA014C400D93468 /* StoreHandle.m in Sources */,
 				7A355D191B9E554D00045A8E /* RootRouteHandle.m in Sources */,
 				7A31D4F01B9DE42C00ABD450 /* main.m in Sources */,
 				7A31D51D1B9DE75D00ABD450 /* HotAPIHandle.m in Sources */,

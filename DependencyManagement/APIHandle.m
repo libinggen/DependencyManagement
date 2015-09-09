@@ -7,7 +7,13 @@
 //
 
 #import "APIHandle.h"
+#import "APIParamSourceInterface.h"
+#import "APICallbackInterface.h"
 
+@interface APIHandle()
+@property (nonatomic, weak) id<APIParamSourceInterface> paramSourceHandle;
+@property (nonatomic, weak) id<APICallbackInterface> callbackHandle;
+@end
 @implementation APIHandle
 
 - (void)loadData
@@ -39,5 +45,15 @@
 -(NSArray *)handleList:(NSArray *)list
 {
     return [self.postHelper postArrayWithKeyValuesArray:list];
+}
+
+-(void)setCallbackHandel:(id<APICallbackInterface>)callbackHandel
+{
+    self.callbackHandle = callbackHandel;
+}
+
+-(void)setParamSourceHandel:(id<APIParamSourceInterface>)paramSourceHandel
+{
+    self.paramSourceHandle = paramSourceHandel;
 }
 @end

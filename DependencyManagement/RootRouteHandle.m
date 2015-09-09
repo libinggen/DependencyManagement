@@ -7,10 +7,12 @@
 //
 
 #import "RootRouteHandle.h"
-#import "PostHelper.h"
+#import "HotHelper.h"
+#import "LatestHelper.h"
 
 @interface RootRouteHandle()
-@property (nonatomic, strong) PostHelper *postHelper;
+@property (nonatomic, strong) HotHelper *hotHelper;
+@property (nonatomic, strong) LatestHelper *latestHelper;
 @end
 
 @implementation RootRouteHandle
@@ -19,21 +21,33 @@
 {
     if (!_rootViewController) {
         _rootViewController = [[ViewController alloc] init];
-        _rootViewController.postHelper = self.postHelper;
+        _rootViewController.hotHelper = self.hotHelper;
+        _rootViewController.latestHelper = self.latestHelper;
     }
     
     return _rootViewController;
 }
 
-
-- (PostHelper *)postHelper
+- (HotHelper *)hotHelper
 {
-    if(!_postHelper)
+    if(!_hotHelper)
     {
-        _postHelper = [[PostHelper alloc] init];
-        _postHelper.apiRequester = self.rootViewController;
+        _hotHelper = [[HotHelper alloc] init];
+        [[_hotHelper apiHandle]setCallbackHandel:self.rootViewController];
+        [[_hotHelper apiHandle]setParamSourceHandel:self.rootViewController];
     }
-    return _postHelper;
+    return _hotHelper;
+}
+
+- (LatestHelper *)latestHelper
+{
+    if(!_latestHelper)
+    {
+        _latestHelper = [[LatestHelper alloc] init];
+        [[_latestHelper apiHandle]setCallbackHandel:self.rootViewController];
+        [[_latestHelper apiHandle]setParamSourceHandel:self.rootViewController];
+    }
+    return _latestHelper;
 }
 
 @end

@@ -9,9 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "APIParamSourceInterface.h"
 #import "APICallbackInterface.h"
+#import "HelperInterface.h"
 #import "PostHelperInterface.h"
 
 @interface ViewController : UIViewController<APIParamSourceInterface,APICallbackInterface>
-@property (nonatomic, weak) id<PostHelperInterface> postHelper;
+@property (nonatomic, weak) id<HelperInterface,PostHelperInterface> hotHelper;
+@property (nonatomic, weak) id<HelperInterface,PostHelperInterface> latestHelper;
 @end
 

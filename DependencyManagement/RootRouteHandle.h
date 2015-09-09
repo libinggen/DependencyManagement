@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "RouteInterface.h"
+#import "RouteHandle.h"
 #import "ViewController.h"
 
-@interface RootRouteHandle : NSObject<RouteInterface>
+@interface RootRouteHandle : RouteHandle
 @property (nonatomic, strong) ViewController *rootViewController;
 @end

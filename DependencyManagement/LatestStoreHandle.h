@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "StoreInterface.h"
+#import "StoreHandle.h"
 
-@interface LatestStoreHandle : NSObject<StoreInterface>
+@interface LatestStoreHandle : StoreHandle
 
 @end
