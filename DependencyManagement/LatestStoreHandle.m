@@ -16,6 +16,6 @@
 
 - (void)archiveWithObject:(id)object
 {
-    [NSKeyedArchiver archiveRootObject:object toFile:[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0] stringByAppendingPathComponent:@".latestListArchiver"]];
+    ([NSKeyedArchiver archiveRootObject:object toFile:[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0] stringByAppendingPathComponent:@".latestListArchiver"]])?NSLog(@"latest archive"):NSLog(@"latest false archive");
 }
 @end

@@ -16,6 +16,6 @@
 
 - (void)archiveWithObject:(id)object
 {
-    [NSKeyedArchiver archiveRootObject:object toFile:[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0] stringByAppendingPathComponent:@".hotListArchiver"]];
+    ([NSKeyedArchiver archiveRootObject:object toFile:[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0] stringByAppendingPathComponent:@".hotListArchiver"]])?NSLog(@"hot archive"):NSLog(@"hot false archive");
 }
 @end

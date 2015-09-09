@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Node : NSObject
+@interface Node : NSObject<NSCoding>
 @property (nonatomic, copy) NSString *avatar_large;
 @property (nonatomic, copy) NSString *avatar_mini;
 @property (nonatomic, copy) NSString *avatar_normal;

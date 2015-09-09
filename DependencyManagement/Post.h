@@ -10,7 +10,7 @@
 #import "Member.h"
 #import "Node.h"
 
-@interface Post : NSObject
+@interface Post : NSObject<NSCoding>
 @property (nonatomic, copy) NSString *content;
 @property (nonatomic, copy) NSString *content_rendered;
 @property (nonatomic, copy) NSString *created;

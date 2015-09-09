@@ -20,6 +20,9 @@
     
     [self initUI];
     [[self.hotHelper apiHandle] loadData];
+    self.list = [self.latestStoreHandle unarchive];
+//    self.list = [[self.latestHelper storeHandle] unarchive];
+    [self tableViewReloadData];
 }
 
 -(void)initUI
@@ -30,9 +33,6 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     [self.view addSubview:self.tableView];
-    
-//    self.list = [self.hotStoreHelper unarchive];
-//    [self tableViewReloadData];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -84,6 +84,7 @@
     }
     else if ([apiHandle isKindOfClass:[[self.latestHelper apiHandle] class]]) {
         self.list = data;
+        [self.latestStoreHandle archiveWithObject:data];
     }
         
     [self tableViewReloadData];

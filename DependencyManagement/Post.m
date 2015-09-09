@@ -21,6 +21,19 @@
     return self;
 }
 
+- (id)initWithCoder:(NSCoder *)decoder
+{
+    if (self = [super init]) {
+//        [self decode:decoder];
+    }
+    return self;
+}
+
+- (void)encodeWithCoder:(NSCoder *)encoder
+{
+//    [self encode:encoder];
+}
+
 + (instancetype)objectWithDict:(NSDictionary *)dict
 {
     return [[self alloc] initWithDict:dict];
