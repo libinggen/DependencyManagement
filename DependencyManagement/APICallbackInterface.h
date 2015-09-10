@@ -11,6 +11,7 @@
 #define CallBack_APICallbackInterface_h
 @protocol APICallbackInterface <NSObject>
 
+@optional
 - (void)listWtihData:(NSArray *)data apiHandle:(id<APIInterface>)apiHandle;
 @end
 #endif

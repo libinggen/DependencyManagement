@@ -10,6 +10,8 @@
 #ifndef DependencyManagement_PostInterface_h
 #define DependencyManagement_PostInterface_h
 @protocol PostInterface <NSObject>
+
+@optional
 -(NSString *)title;
 -(Member *)member;
 @end

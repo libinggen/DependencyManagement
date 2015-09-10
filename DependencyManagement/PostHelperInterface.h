@@ -11,6 +11,7 @@
 #define DependencyManagement_PostHelperInterface_h
 @protocol PostHelperInterface <NSObject>
 
+@optional
 -(NSString *)titleForPost:(id<PostInterface>)post;
 -(NSString *)imageURLStringForPost:(id<PostInterface>)post;
 -(NSArray *)postArrayWithKeyValuesArray:(NSArray *)array;

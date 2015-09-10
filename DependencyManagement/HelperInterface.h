@@ -12,6 +12,7 @@
 #define DependencyManagement_HelperInterface_h
 @protocol HelperInterface <NSObject>
 
+@optional
 -(id<APIInterface>)apiHandle;
 -(id<StoreInterface>)storeHandle;
 @end

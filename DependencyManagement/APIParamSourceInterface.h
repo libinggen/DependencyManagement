@@ -11,6 +11,7 @@
 #define CallBack_APIParamSourceInterface_h
 @protocol APIParamSourceInterface <NSObject>
 
+@optional
 - (NSDictionary *)paramSourceAPIHandle:(id<APIInterface>)apiHandle;
 @end
 #endif

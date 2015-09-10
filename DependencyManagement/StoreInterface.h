@@ -10,6 +10,7 @@
 #define DependencyManagement_StoreInterface_h
 @protocol StoreInterface <NSObject>
 
+@optional
 - (id)unarchive;
 - (void)archiveWithObject:(id)object;
 @end

@@ -12,6 +12,7 @@
 #define DependencyManagement_RouteParamSourceInterface_h
 @protocol RouteParamSourceInterface <NSObject>
 
+@optional
 -(NSDictionary *)paramSourceForRouteHandle:(id<RouteInterface>)routeHandle;
 @end
 #endif
