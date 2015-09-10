@@ -54,8 +54,19 @@
 
 - (UITableViewCell *)configureWithCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    cell.textLabel.text = [self.hotHelper titleForPost:self.list[indexPath.row]];
-    cell.imageView.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:[NSString stringWithFormat:@"http:%@",[self.hotHelper imageURLStringForPost:self.list[indexPath.row]]]]]];
+    cell.textLabel.text = [self.latestHelper titleForPost:self.list[indexPath.row]];
+    
+    __weak __typeof(self)weakSelf = self;
+    dispatch_queue_t concurrentQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    dispatch_async(concurrentQueue, ^{
+        __block UIImage *image = nil;
+        dispatch_sync(concurrentQueue, ^{
+            image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:[NSString stringWithFormat:@"http:%@",[weakSelf.latestHelper imageURLStringForPost:weakSelf.list[indexPath.row]]]]]];
+        });
+        dispatch_sync(dispatch_get_main_queue(), ^{
+            cell.imageView.image = image;
+        });
+    });
     return cell;
 }
 
