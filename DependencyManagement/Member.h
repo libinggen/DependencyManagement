@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CodingModel.h"
 
-@interface Member : NSObject<NSCoding>
+@interface Member : CodingModel
 @property (nonatomic, copy) NSString *avatar_large;
 @property (nonatomic, copy) NSString *avatar_mini;
 @property (nonatomic, copy) NSString *avatar_normal;

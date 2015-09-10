@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02702AA41BA15A8500DD3CF0 /* CodingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 02702AA31BA15A8500DD3CF0 /* CodingModel.m */; };
 		02D8D8B81BA011CD00D93468 /* HotHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 02D8D8B71BA011CD00D93468 /* HotHelper.m */; };
 		02D8D8BB1BA011E100D93468 /* LatestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 02D8D8BA1BA011E100D93468 /* LatestHelper.m */; };
 		02D8D8BF1BA0141000D93468 /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 02D8D8BE1BA0141000D93468 /* Helper.m */; };
@@ -42,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02702AA21BA15A8500DD3CF0 /* CodingModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodingModel.h; sourceTree = "<group>"; };
+		02702AA31BA15A8500DD3CF0 /* CodingModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodingModel.m; sourceTree = "<group>"; };
 		02D8D8B61BA011CD00D93468 /* HotHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotHelper.h; sourceTree = "<group>"; };
 		02D8D8B71BA011CD00D93468 /* HotHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotHelper.m; sourceTree = "<group>"; };
 		02D8D8B91BA011E100D93468 /* LatestHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LatestHelper.h; sourceTree = "<group>"; };
@@ -115,6 +118,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02702AA51BA15A8F00DD3CF0 /* CodingModel */ = {
+			isa = PBXGroup;
+			children = (
+				02702AA21BA15A8500DD3CF0 /* CodingModel.h */,
+				02702AA31BA15A8500DD3CF0 /* CodingModel.m */,
+			);
+			name = CodingModel;
+			sourceTree = "<group>";
+		};
 		02D8D8C61BA01C9D00D93468 /* PostHelper */ = {
 			isa = PBXGroup;
 			children = (
@@ -249,6 +261,7 @@
 		7A31D5231B9DE8E400ABD450 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				02702AA51BA15A8F00DD3CF0 /* CodingModel */,
 				7A31D5301B9DEB9C00ABD450 /* Node */,
 				7A31D52C1B9DEB5700ABD450 /* Member */,
 				7A31D5271B9DE91200ABD450 /* Post */,
@@ -477,6 +490,7 @@
 				7A31D51C1B9DE75D00ABD450 /* APIHandle.m in Sources */,
 				7A31D51E1B9DE75D00ABD450 /* LatestAPIHandle.m in Sources */,
 				7A355D1E1B9E594300045A8E /* PostHelper.m in Sources */,
+				02702AA41BA15A8500DD3CF0 /* CodingModel.m in Sources */,
 				02D8D8BF1BA0141000D93468 /* Helper.m in Sources */,
 				7A355D251B9F307B00045A8E /* LatestStoreHandle.m in Sources */,
 				02D8D8C51BA01C0900D93468 /* RouteHandle.m in Sources */,

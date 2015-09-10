@@ -9,6 +9,12 @@
 #import "Node.h"
 
 @implementation Node
+
++ (instancetype)objectWithDict:(NSDictionary *)dict
+{
+    return [[self alloc] initWithDict:dict];
+}
+
 - (instancetype)initWithDict:(NSDictionary *)dict
 {
     if (self = [super init]) {
@@ -17,25 +23,5 @@
         
     }
     return self;
-}
-
-- (id)initWithCoder:(NSCoder *)decoder
-{
-    if (self = [super init]) {
-        //        [self decode:decoder];
-//        self.avatar_mini = [decoder decodeObjectForKey:@"avatar_mini"];
-    }
-    return self;
-}
-
-- (void)encodeWithCoder:(NSCoder *)encoder
-{
-    //    [self encode:encoder];
-//    [encoder encodeObject:self.avatar_mini forKey:@"avatar_mini"];
-}
-
-+ (instancetype)objectWithDict:(NSDictionary *)dict
-{
-    return [[self alloc] initWithDict:dict];
 }
 @end

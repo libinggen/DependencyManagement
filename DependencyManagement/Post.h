@@ -7,10 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CodingModel.h"
 #import "Member.h"
 #import "Node.h"
 
-@interface Post : NSObject<NSCoding>
+@interface Post : CodingModel
 @property (nonatomic, copy) NSString *content;
 @property (nonatomic, copy) NSString *content_rendered;
 @property (nonatomic, copy) NSString *created;
