@@ -43,7 +43,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *cellIdentifier = @"cellIdentifier";
+    NSString *cellIdentifier = [NSString stringWithFormat:@"cellIdentifier%ld%ld",(long)indexPath.row,(long)indexPath.section];
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     if (!cell) {
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:cellIdentifier];
@@ -60,11 +60,10 @@
     dispatch_queue_t concurrentQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     dispatch_async(concurrentQueue, ^{
         __block UIImage *image = nil;
-        dispatch_sync(concurrentQueue, ^{
-            image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:[NSString stringWithFormat:@"http:%@",[weakSelf.latestHelper imageURLStringForPost:weakSelf.list[indexPath.row]]]]]];
-        });
-        dispatch_sync(dispatch_get_main_queue(), ^{
+        image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:[NSString stringWithFormat:@"http:%@",[weakSelf.latestHelper imageURLStringForPost:weakSelf.list[indexPath.row]]]]]];
+        dispatch_async(dispatch_get_main_queue(), ^{
             cell.imageView.image = image;
+            [cell setNeedsLayout];
         });
     });
     return cell;
